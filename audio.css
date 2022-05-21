@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+#container{
+    border: 3px solid black;
+    background-color: rgb(24, 22, 22);
+    display:flex;
+    justify-content: space-around;
+    height: 100vh;
+    /* background: url(./ts/images/bg1.jpg) no-repeat center center/cover; */
+}
+#player{
+    /* margin:20px; */
+    margin-left: 50px;
+    padding: 20px ;
+    border: 2px solid red;
+    border-radius: 60px;
+    background-color: rgb(235, 180, 180);
+}
+#player>#image{
+    width:450px;
+    height: 350px;
+    margin: auto;
+    background-color: black;
+    border-radius: 50px;
+}
+#thumbnail{
+    display: block;
+    margin:20px auto;
+    width:300;
+    height:300px;
+    /* border:10px solid black; */
+    border-radius: 200px;
+    animation: rotation 9000ms linear infinite;
+    /* box-shadow:  0px 0px 10px 10px red ; */
+    
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#list{
+    margin:60px 20px;
+    padding: 30px;
+    width:500px; 
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 5px solid rgb(237, 241, 16) ;
+    background-color: black;
+    box-shadow: inset 0px 0px 100px 5px violet;
+    border-radius: 30px;
+}
+#playlist{
+    /* margin:20px; */
+    padding:10px;
+    border:2px solid red;
+    border-radius: 30px;
+    background-color: rgb(235, 180, 180);
+    box-shadow: inset 0px 0px 200px 30px black;
+
+}
+#image{
+    border: 5px solid yellow;
+}
+#control{
+    border: 5px solid rgb(243, 243, 8);
+    border-radius: 50px;
+    padding: 20px 40px ;
+    margin: auto;
+    margin-top:20px;
+    padding-right: 90px;
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(121, 108, 238);
+    box-shadow: inset 0px 0px 100px 3px green;
+}
+.list_song{
+    list-style-type: none;
+}
+
+.function{
+    width:0px;
+    
+    border-radius: 50px;
+    border:0px solid white;
+    /* background-color: yellow; */
+    margin:0px 5px;
+}
+.song_control{
+    /* width:40px; */
+    height: 50px;
+    border-radius: 50px;
+}
+audio{
+    /* visibility: hidden; */
+    display: none;
+    /* display: block; */
+    margin: auto;
+}
+.queue{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    margin: 10px;
+    border:2px solid rgb(141, 4, 4);
+    border-radius: 300px;
+    background-color: rgb(177, 250, 8);
+    color: rgb(10, 10, 9);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    box-shadow: inset 0px 0px 30px 3px ;
+}
+.queue:hover{
+    font-size: 1.5rem;
+}
+#bar{
+    border:2px solid black;
+    margin:20px auto;
+    padding:10px;
+    border-radius: 60px;
+    
+    width:70%;
+    background-color: rgb(21, 180, 243);
+}
+#runningBar{
+    /* padding:2px ; */
+    border:2px solid green;
+    border-radius: 10px;
+    margin:5px auto;
+    width:80%;
+    height: 10px;
+
+}
+#runningBar>div{
+    height:6px;
+    width:0%;
+    background-color: black;
+}
+#vol-control{
+    display:none;
+    position: absolute;
+    top:90px;
+    left:80px;
+    transform: rotate(-90deg);
+}
+.timing{
+    margin:0px 20px;
+    font-weight: bolder;
+}
+#E_time{
+float:right;
+}
+#status{
+    margin:-10px 0px;
+    text-align: center;
+    font-weight: bolder;
+}
